@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #aboutme{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ background-color: yellow;
+        }
+        #div h1{
+         text-decoration: underline;
+         color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="aboutme">
+    <h1>Hey! my name is Apurva</h1>
+    </div>
+    <script>
+        let toggle = true;
+
+        const changeText = function(){
+           if(toggle){
+            document.querySelector('#aboutme').innerHTML = "<h1>I am a backend developer </h1>"
+           }else{
+            document.querySelector('#aboutme').innerHTML = '<h1>Hey! My Name is Apurva </h1>'
+           }
+          toggle = !toggle;
+            
+
+        }
+        setInterval(changeText ,2000)
+    </script>
+</body>
+</html>
